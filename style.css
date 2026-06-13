@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Topo */
+.topo-contato {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: #fff;
+    align-items: center;
+}
+
+.logo-titulo h1 {
+    color: #0056b3;
+    font-size: 28px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+}
+
+.logo-titulo p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.info-direita p {
+    font-size: 13px;
+    color: #008cba;
+    margin-bottom: 4px;
+}
+
+/* Menu */
+.menu-principal {
+    background-color: #007bff;
+    padding: 12px 10%;
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(to bottom, #74b9ff, #0984e3);
+    padding: 40px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.banner-texto h2 {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.banner-texto h3 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.banner-rodape {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.banner-imagem img {
+    max-width: 380px;
+    height: auto;
+}
+
+/* Serviços */
+.servicos-container {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.servicos-container h2 {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.grid-servicos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-servico {
+    text-align: center;
+    margin: 20px;
+    width: 200px;
+}
+
+.card-servico img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Seção Livro */
+.secao-livro {
+    background-color: #fff;
+    padding: 40px 10%;
+    border-top: 1px solid #ddd;
+}
+
+.livro-conteudo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.livro-capa img {
+    width: 220px;
+    height: auto;
+    margin-right: 40px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.livro-texto h3 {
+    color: #d63031;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.livro-texto .autor {
+    color: #666;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.livro-texto blockquote {
+    font-style: italic;
+    color: #444;
+    line-height: 1.6;
+    border-left: 4px solid #d63031;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+/* Botões */
+.botoes-livro {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.azul-claro { background-color: #00bec4; }
+.azul-escuro { background-color: #0076a3; }
+.laranja { background-color: #f39c12; }
+
+.icone-baixar {
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* Visual da Janela Flutuante do Pix */
+.fundo-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); 
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-modal {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 480px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.botao-fechar {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-fechar:hover {
+    color: #333;
+}
+
+.conteudo-modal h3 {
+    color: #00BEC4;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.instrucao-pix {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.caixa-chave {
+    background-color: #f1f2f6;
+    border: 2px dashed #00BEC4;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.caixa-chave small {
+    display: block;
+    color: #777;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.caixa-chave strong {
+    display: block;
+    font-size: 16px;
+    color: #2f3542;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+
+.aviso-envio {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Espaço Publicitário Livre */
+.espaco-publicidade {
+    background-color: #fffde7;
+    border: 2px dashed #f57f17;
+    padding: 40px;
+    text-align: center;
+    margin: 30px 10%;
+    border-radius: 8px;
+}
+
+.espaco-publicidade h3 {
+    color: #e65100;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.espaco-publicidade p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Rodapé */
+.rodape-final {
+    background-color: #0056b3;
+    color: white;
+    padding: 25px 10%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.menu-rodape {
+    margin-bottom: 10px;
+}
+
+.menu-rodape a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
